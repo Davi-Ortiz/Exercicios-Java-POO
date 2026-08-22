@@ -1,3 +1,10 @@
+package Aula02;
+/******************************************************************************
+3- Previsao.java — antes de rodar, escreva num comentário o que cada linha imprime;
+depois execute e confira o que cada print mostra.
+
+*******************************************************************************/
+
 public class Previsao {
     public static void main(String[] args) {
 
