@@ -43,6 +43,9 @@ public class Conversor
 	  
 	  System.out.printf("|>> Temperatura em Celcius:  %.2f \n|>> Temperatura Convertida em Fahrenheit:  %.2f", C, F);
 	  
+	  
+		System.out.print( "\n\n ****** FINALIZANDO SISTEMA ******* \n\n" );
+
 	  scanner.close();
 	  }
 }
