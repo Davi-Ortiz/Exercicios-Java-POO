@@ -1,0 +1,37 @@
+Começando um repositório novo
+
+git init                          # inicia um repositório git na pasta atual
+git remote add origin <url>       # conecta ao repositório do GitHub
+git branch -M main                # renomeia a branch principal para "main"
+
+Fluxo do dia a dia (o que você vai repetir sempre)
+
+git status                        # mostra o que mudou
+git add .                         # adiciona todos os arquivos modificados
+git add nome-do-arquivo           # adiciona só um arquivo específico
+git commit -m "mensagem clara"    # salva as mudanças com uma mensagem
+git push                          # envia para o GitHub (depois do primeiro push com -u origin main)
+
+=> Trazendo mudanças do GitHub
+
+git pull                          # atualiza sua cópia local com o que está no GitHub
+git clone <url>                   # baixa um repositório inteiro pela primeira vez
+
+=> Para investigar/corrigir
+
+git log                           # histórico de commits
+git diff                          # mostra o que mudou antes de dar add
+git checkout -- arquivo           # descarta mudanças não commitadas em um arquivo
+
+=> Branches (quando for mexer em features separadas)
+
+git branch nome-da-branch         # cria uma branch
+git checkout nome-da-branch       # muda para ela
+git checkout -b nome-da-branch    # cria e já muda para ela
+git merge nome-da-branch          # junta ela na branch atual
+
+=> Na prática, 90% do seu uso vai ser esse ciclo:
+
+git add .
+git commit -m "descrição do que mudou"
+git push
